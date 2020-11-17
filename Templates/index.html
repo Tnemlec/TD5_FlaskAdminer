@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyApp</title>
+</head>
+<body>
+    <H1>Welcome to my app</H1>
+    {% for item in data %}
+        <p>
+            <td>{{item[1]}}</td>
+            <td>{{item[2]}}</td>
+            <td>{{item[3]}}</td>
+        </p>
+    {% endfor %}
+    <form method="POST" action="/">
+        <p>Votre post ici</p>
+        <textarea rows="10" cols="60" name="post"></textarea>
+        <input type="submit"/> 
+    </form>
+</body>
+</html>
